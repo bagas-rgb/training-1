@@ -1,0 +1,6 @@
+{
+  "name": "KawanEvent Riau - Platform Informasi & Pendaftaran Event Pelajar",
+  "description": "Platform modern informasi, kurasi lomba, dan pendaftaran event pelajar Pekanbaru & Riau dengan tiket digital interaktif dan dokumentasi prompt AI Duckathon 2.0.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

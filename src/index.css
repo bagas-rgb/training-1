@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Scrollbar hide utility */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Vibe Theme Accent Variables */
+.theme-duck {
+  --color-primary: #f59e0b;
+}
+
+.theme-cyber {
+  --color-primary: #06b6d4;
+}
+
+.theme-emerald {
+  --color-primary: #10b981;
+}
+
+.theme-mono {
+  --color-primary: #e4e4e7;
+}
+
+/* Print Styles for E-Ticket */
+@media print {
+  header, footer, nav, button, .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  [id^="ticket-"] {
+    border: 2px solid #000 !important;
+    background: #fff !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+
+  [id^="ticket-"] * {
+    color: #000 !important;
+  }
+}
